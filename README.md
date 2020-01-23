@@ -23,5 +23,5 @@ O sistema funciona tanto para o lado do empreendedor como para o lado do cliente
 * MySQL
 
 ## Envolvidos ##
-github.com/srfilipe
-Matheus Rafalsky
+* github.com/srfilipe
+* Matheus Rafalsky
