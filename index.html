@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet"  href="lib/node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/login.css"/>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="form_content">
+                <h4>Você quer sair mas não sabe para onde ir?</h4>
+                <h5>Nós temos a solução!</h5>
+                <p>Simplesmente responda a um rápido questionário sobre o seu estilo e gostos,
+                    e nós mostramos o lugar perfeito para você.</p>
+                <button>Saiba mais</button>
+            </div>
+            <div class="login_form">
+                <h4>Faça o login para entrar</h4>
+                <form name="login-form" action="php/login.php" method="POST">
+                    <input type="text" name="usr" placeholder="Usuário ou e-mail..." required>
+                    <input type="password" name="pswd1" placeholder="Senha..." required>
+                    <input type="submit" name="btn-1" value="Entrar">
+                </form>
+                <button type="button" class="btn btn-warning" name="btn-2" data-toggle="modal" data-target ="#regModal">Crie uma conta</button>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+        </div>
+    </section>
+
+    <!--MODAL REGISTRO-->
+    <div class="modal fade" id="regModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Registre-se</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form name="signin-form" class="form-row" action="php/cadastro.php" method="POST">
+                        <div class="form-group col-sm-6">
+                            <input class="form-control form-control-lg" type="text" name="p_nome" placeholder="Primeiro nome..." required>
+                        </div>
+
+                        <div class="form-group col-sm-6">
+                            <input class="form-control form-control-lg" type="text" name="u_nome" placeholder="Último nome..." required>
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <input class="form-control form-control-lg" type="text" name="usuario" placeholder="Usuário" required>
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <input class="form-control form-control-lg" type="email" name="email1" placeholder="E-mail..." required>
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <input class="form-control form-control-lg" type="email" name="email2" placeholder="Confirme seu e-mail..." required>
+                        </div>
+
+                        <div class="form-group col-sm-12">
+                            <input class="form-control form-control-lg" type="password" name="senha" placeholder="Senha..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="btn" type="submit" name="btn-criar" value="Criar conta">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!--
+        Banner - Como usar o sistema
+        <div class="row">
+            <h4>Como encontrar o lugar ideal?</h4>
+            <br>
+            <p>Você pode responder a um questionário inteligente sobre seus gostos e estilo pessoal</p>
+            <p>Também é possível buscar pelo seu estabelecimente favorito</p>
+            <p>Se você não sabe qual escolher nós te mostramos os 5 melhores restaurantes, não se preocupe!</p>
+            <p>Se ainda restam dúvidas, entre ou cadastre-se para conhecer o melhor do nosso site</p>
+            <a href="#" data-toggle="" data-target="#">Entrar ou cadastrar</a>
+        </div>
+
+        Banner - Entrar ou registrar
+        <div class="row">
+            <h3>Está com fome?</h3>
+            <h4>Faça seu login e encontre os melhores restaurantes</h4>
+            <button id="entrar">Entrar</button>
+
+            <h3>Ainda não tem uma conta?</h3>
+            <h4>Registre-se e divirta-se!</h4>
+            <button id="cadastrar">Cadastrar</button>
+        </div>
+        
+        
+        <footer id="rodape">
+            <h6>©Caça à fome - Todos os direitos reservados</h6>
+            <h6>Desenvolvido por Filipe Spadetto & Matheus Rafalsky</h6>
+        </footer>
+        -->
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="lib/node_modules/jquery/dist/jquery.js"></script>
+    <script src="lib/node_modules/popper.js/dist/popper.js"></script>
+    <script src="lib/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
